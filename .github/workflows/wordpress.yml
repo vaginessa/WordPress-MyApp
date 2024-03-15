@@ -1,0 +1,27 @@
+name: WordPress CI
+
+on:
+  push:
+    branches:
+      - main
+      - feature/*
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install WordPress
+        run: |
+          # Commands to install WordPress
+
+      - name: Install dependencies
+        run: |
+          # Commands to install dependencies
+
+      - name: Test
+        run: |
+          # Commands to run tests
